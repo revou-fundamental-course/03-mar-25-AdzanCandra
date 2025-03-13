@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Adzan</title>
+
+    <!-- Biar nyambung ke CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Main Header -->
+    <header class="main-header">
+      <!-- Tulisan Adzan di kiri atas -->
+      <div class="adzan">ADZAN</div>
+
+      <!-- Navigation -->
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <div class="nav-links">
+          <a href="#beranda">Beranda</a>
+          <a href="#profil">Profil</a>
+          <a href="#kontak">Kontak</a>
+          <a href="#input-data">Input Data</a>
+        </div>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+      <!-- Beranda Content -->
+      <section id="beranda">
+        <header>
+          <center>
+            <h1>Halo semua, selamat datang di Website Percobaanku</h1>
+            <p>Ini beberapa hasil dari foto iseng yang aku punya</p>
+          </center>
+        </header>
+
+        <!-- Banner Auto Slide -->
+        <div class="autoslide">
+          <img class="mySlide" src="assets/banner1.jpeg" />
+          <img class="mySlide" src="assets/banner2.jpeg" />
+          <img class="mySlide" src="assets/banner3.jpeg" />
+          <img class="mySlide" src="assets/banner4.jpeg" />
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Profil Content -->
+      <section id="profil">
+        <header>
+          <center><h1>Profil</h1></center>
+        </header>
+        <div class="profil-content">
+          <img class="aku" src="assets\aku.jpeg" />
+          <p>Halo semuanya, namaku adalah Adzan. Aku cukup menyukai fotografi namun aku ingin menambah pengetahuanku di bidang Software Engineer. Sebenernya aku pernah belajar ini namun itu sudah cukup lama, hingga aku sudah sedikit lupa wkwkwk. Dan mohon maaf kalo masih jelek UI nya</p>
+        </div>
+      </section>
+
+      <!-- Kontak Content -->
+      <section id="kontak">
+        <header>
+          <center><h1>Kontak</h1></center>
+        </header>
+        <div class="kontak-content">
+          <p>Kamu bisa menghubungiku di Instagramku</p>
+          <a href="https://www.instagram.com/adzandrapra?igsh=MXV0ejdzZm5xZDRpYQ==" target="_blank">
+            <img class="instagram" src="assets/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Input Data Content -->
+      <section id="input-data">
+        <header>
+          <center><h1>Input Data</h1></center>
+        </header>
+        <div class="input-data-content">
+          <!-- Formulir Pengisian -->
+          <div class="form-container">
+            <table>
+              <tr>
+                <td><label for="name">Nama:</label></td>
+                <td><input type="text" id="name" /></td>
+              </tr>
+              <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" /></td>
+              </tr>
+              <tr>
+                <td><label for="message">Pesan:</label></td>
+                <td><textarea id="message"></textarea></td>
+              </tr>
+              <tr>
+                <td colspan="2"><button onclick="sendMessage()">Kirim</button></td>
+              </tr>
+            </table>
+          </div>
+          <!-- Hasil dari Formulir -->
+          <div class="message-box" id="output"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Main Footer -->
+    <footer>
+      <p>&copy; 2025 Website Adzan</p>
+    </footer>
+
+    <!-- Biar nyambung ke Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
